@@ -4,6 +4,9 @@ function loadMenuTab() {
     const menu = document.createElement('div');
     menu.classList.add('menu');
 
+    const headline = document.createElement('h1');
+    headline.textContent = 'Menu';
+
     const menuItems = [
         { name: 'Pancakes with Maple Syrup', price: '$10', description: 'Fluffy pancakes served with pure maple syrup.' },
         { name: 'French Toast', price: '$8', description: 'Classic French toast with a hint of cinnamon.' },
@@ -38,6 +41,7 @@ function loadMenuTab() {
         menu.appendChild(menuItem);
     })
 
+    content.appendChild(headline);
     content.appendChild(menu);
 }
 
