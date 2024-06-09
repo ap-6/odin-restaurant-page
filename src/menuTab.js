@@ -1,8 +1,5 @@
 function loadMenuTab() {
     const content = document.getElementById('content');
-    while (content.firstChild) {
-        content.removeChild(content.firstChild);
-    }
 
     const menu = document.createElement('div');
     menu.classList.add('menu');
@@ -32,7 +29,7 @@ function loadMenuTab() {
         itemPrice.textContent = item.price;
 
         const itemDescription = document.createElement('p');
-        itemDescription = item.description;
+        itemDescription.textContent = item.description;
 
         menuItem.appendChild(itemName);
         menuItem.appendChild(itemPrice);
