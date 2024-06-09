@@ -1,7 +1,7 @@
-import initialLoad from "./initialLoad";
-
-console.log("THis is hard!");
+import loadHomeTab from "./homeTab";
+import loadMenuTab from "./menuTab";
 
 document.addEventListener('DOMContentLoaded', () => {
-    initialLoad();
+    loadHomeTab();
 })
+

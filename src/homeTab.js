@@ -1,6 +1,6 @@
 import restaurantImage from './assets/restaurant-stock-1.jpg';
 
-function initialLoad() {
+function loadHomeTab() {
     const content = document.getElementById('content');
 
     const headline = document.createElement('h1');
@@ -9,6 +9,8 @@ function initialLoad() {
     const img = document.createElement('img');
     img.src = restaurantImage;
     img.alt = 'Decorated restaurant table';
+    img.style.width = '300px'; 
+    img.style.height = 'auto'; 
 
     const description = document.createElement('p');
     description.textContent = 'Come experience the best dining in town! Our ' +
@@ -22,4 +24,4 @@ function initialLoad() {
     content.appendChild(description);
 }
 
-export default initialLoad;
+export default loadHomeTab;
