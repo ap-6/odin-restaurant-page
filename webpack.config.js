@@ -16,6 +16,9 @@ module.exports = {
       minify: false,
     }),
   ],
+  devServer: {
+    static: './dist',
+  },
   module: {
     rules: [
       {

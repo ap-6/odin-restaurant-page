@@ -4,11 +4,8 @@ function loadMenuTab() {
     const menu = document.createElement('div');
     menu.classList.add('menu');
 
-    const headline = document.createElement('h1');
-    headline.textContent = 'Menu';
-
     const menuItems = [
-        { name: 'Pancakes with Maple Syrup', price: '$10', description: 'Fluffy pancakes served with pure maple syrup.' },
+        { name: 'Pancakes', price: '$10', description: 'Fluffy pancakes served with pure maple syrup.' },
         { name: 'French Toast', price: '$8', description: 'Classic French toast with a hint of cinnamon.' },
         { name: 'Eggs Benedict', price: '$12', description: 'English muffin topped with poached eggs and hollandaise.' },
         { name: 'Breakfast Burrito', price: '$9', description: 'Stuffed with eggs, cheese, and your choice of meat.' },
@@ -39,9 +36,8 @@ function loadMenuTab() {
         menuItem.appendChild(itemDescription);
 
         menu.appendChild(menuItem);
-    })
-
-    content.appendChild(headline);
+    });
+    
     content.appendChild(menu);
 }
 

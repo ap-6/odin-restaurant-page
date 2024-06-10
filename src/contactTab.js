@@ -1,12 +1,6 @@
 function loadContactTab() {
     const content = document.getElementById('content');
 
-    const headline = document.createElement('h1');
-    headline.textContent = 'Contact Us';
-
-    const intro = document.createElement('p');
-    intro.textContent = "We'd love to hear from you! Reach out to us using the following details:";
-
     const addressHeading = document.createElement('h2');
     addressHeading.textContent = 'Address';
 
@@ -34,8 +28,6 @@ function loadContactTab() {
     const hoursWeekend = document.createElement('p');
     hoursWeekend.textContent = 'Saturday - Sunday: 8am - 4pm';
 
-    content.appendChild(headline);
-    content.appendChild(intro);
     content.appendChild(addressHeading);
     content.appendChild(address);
     content.appendChild(phoneHeading);

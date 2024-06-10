@@ -4,7 +4,7 @@ function loadHomeTab() {
     const content = document.getElementById('content');
 
     const headline = document.createElement('h1');
-    headline.textContent = 'Welcome to My Restaurant';
+    headline.textContent = 'Bob\'s Breakfast Cafe';
 
     const img = document.createElement('img');
     img.src = restaurantImage;
@@ -12,16 +12,22 @@ function loadHomeTab() {
     img.style.width = '300px'; 
     img.style.height = 'auto'; 
 
-    const description = document.createElement('p');
-    description.textContent = 'Come experience the best dining in town! Our ' +
-                                'restaurant offers a variety of exquisite ' + 
-                                'dishes made from the freshest ingredients. ' +
-                                'We take pride in providing excellent service ' + 
-                                'and a cozy atmosphere.';
+    // const greet = document.createElement('div');
+    // greet.textContent = 'Welcome to Bob\'s Breakfast Cafe';
+
+    const slogan = document.createElement('h2');
+    slogan.textContent = 'Your morning starts here!';
+
+    const menuButton = document.createElement('button');
+    menuButton.textContent = 'View menu';
+    menuButton.classList.add('menu-button');
 
     content.appendChild(headline);
-    content.appendChild(img);
-    content.appendChild(description);
+    content.appendChild(slogan);
+    //content.appendChild(img);
+    content.appendChild(menuButton);
+    //content.appendChild(greet);
+
 }
 
 export default loadHomeTab;
