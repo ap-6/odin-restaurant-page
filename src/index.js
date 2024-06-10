@@ -1,10 +1,9 @@
 import loadHomeTab from "./homeTab";
 import loadMenuTab from "./menuTab";
 import loadContactTab from "./contactTab";
+import switchTab from "./switchTabs";
 import './normalize.css';
 import './style.css';
-
-const content = document.getElementById('content');
 
 document.addEventListener('DOMContentLoaded', () => {
     loadHomeTab();
@@ -17,11 +16,3 @@ const contactTab = document.getElementById('contact-tab');
 homeTab.addEventListener('click', () => switchTab(loadHomeTab));
 menuTab.addEventListener('click', () => switchTab(loadMenuTab));
 contactTab.addEventListener('click', () => switchTab(loadContactTab));
-
-function switchTab(loadTab) {
-    while (content.firstChild) {
-        content.removeChild(content.firstChild);
-    }
-
-    loadTab();
-}
