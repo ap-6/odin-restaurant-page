@@ -1,6 +1,8 @@
 import loadHomeTab from "./homeTab";
 import loadMenuTab from "./menuTab";
 import loadContactTab from "./contactTab";
+import './normalize.css';
+import './style.css';
 
 const content = document.getElementById('content');
 
