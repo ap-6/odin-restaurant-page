@@ -1,4 +1,7 @@
 import restaurantImage from './assets/restaurant-stock-1.jpg';
+import restaurantInt from './assets/restaurant_int.webp'
+import loadMenuTab from './menuTab';
+import switchTab from './switchTabs';
 
 function loadHomeTab() {
     const content = document.getElementById('content');
@@ -7,7 +10,7 @@ function loadHomeTab() {
     headline.textContent = 'Bob\'s Breakfast Cafe';
 
     const img = document.createElement('img');
-    img.src = restaurantImage;
+    img.src = restaurantInt;
     img.alt = 'Decorated restaurant table';
     img.style.width = '300px'; 
     img.style.height = 'auto'; 
@@ -21,11 +24,13 @@ function loadHomeTab() {
     const menuButton = document.createElement('button');
     menuButton.textContent = 'View menu';
     menuButton.classList.add('menu-button');
+    menuButton.addEventListener('click', () => switchTab(loadMenuTab));
 
     content.appendChild(headline);
     content.appendChild(slogan);
-    //content.appendChild(img);
+
     content.appendChild(menuButton);
+    content.appendChild(img);
     //content.appendChild(greet);
 
 }
